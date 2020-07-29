@@ -1,17 +1,16 @@
 import React from 'react';
+import {BrowserRouter} from 'react-router-dom'
+import MainRouter from './Routers/routers'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
 
-function App() {
-  return (
-    <div className="App">
+const App = () => (
+  <BrowserRouter>
 
-      <div>
-        <h2>
-          Hello world !!
-        </h2>
-      </div>
-
-    </div>
-  );
-}
+    <MainRouter/>
+    
+  </BrowserRouter>
+)
 
 export default App;
