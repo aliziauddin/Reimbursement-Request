@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Tables from '../../components/Tables/Tables';
+import NavBar from '../../components/NavBar/NavBar';
 import {MDBBtn} from 'mdbreact'
 
 class userhome extends Component{
@@ -54,6 +55,8 @@ class userhome extends Component{
   {
     return(
       <div>
+        <NavBar />
+        <h1>TABLES</h1>
         <Tables
         columns = {this.state.columns}
         rows  ={this.state.rows}
